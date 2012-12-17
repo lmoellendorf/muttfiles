@@ -43,9 +43,11 @@ set strict_threads="yes"
 # collapse threads with unread messages
 unset collapse_unread
 
-# check at most once every 5 seconds
+# check for new mail delivered while the mailbox is open
 set check_new
+# check at most once every 5 seconds
 set mail_check="5"
+# seconds Mutt will at most wait until it aborts waiting for (user) input
 set timeout="100"
 
 # beep for new mail
