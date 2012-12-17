@@ -7,6 +7,9 @@ reset all
 
 # set the homedir
 set my_mutt_dir=$HOME/.mutt
+# set the dir for caching
+# when using an SSD it is preferred to cache in RAM
+set my_cachedir=/var/tmp/mutt
 
 # import your identity
 source $my_mutt_dir/identity
@@ -24,9 +27,9 @@ source $my_mutt_dir/subscription-settings
 # where dat mailcap at?
 set mailcap_path=$my_mutt_dir/mailcap
 
-# keep a cache of headers and bodies for faster loading
-set header_cache=$my_mutt_dir/cache/headers
-set message_cachedir=$my_mutt_dir/cache/bodies
+# keep a cache of headers and bodies for faster loading - may be the same dir
+set header_cache=$my_cachedir
+set message_cachedir=$my_cachedir
 # Display download progress every 5K
 set net_inc=5
 
