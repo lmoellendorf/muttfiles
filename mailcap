@@ -1,5 +1,15 @@
-# Viewing HTML
+# viewing HTML
 # for lynx
 text/html; lynx -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousoutput
 # for w3m
 #text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
+# viewing Word docs
+application/msword; antiword '%s'; copiousoutput; description=Word Document;
+nametemplate=%s.doc
+# viewing PDF docs
+application/pdf; pdftotext '%s' -; copiousoutput; description=PDF Document;
+nametemplate=%s.pdf
+# viewing images
+image/gif; xv %s
+image/jpg; xv %s

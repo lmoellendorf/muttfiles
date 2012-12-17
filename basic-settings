@@ -122,6 +122,13 @@ set fcc_attach
 # view inline if possible
 set implicit_autoview
 auto_view text/html
+auto_view application/msword
+auto_view application/pdf
+auto_view image/gif
+auto_view image/jpg
+# TODO: mailcap entries:
+#auto_view application/x-gunzip
+#auto_view application/x-gzip
 
 # don't need confirmation for appending
 set confirmappend=no
