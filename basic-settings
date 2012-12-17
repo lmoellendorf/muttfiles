@@ -51,7 +51,7 @@ set mail_check="5"
 set timeout="100"
 
 # beep for new mail
-set beep_new
+#set beep_new
 
 # don't mark read mail as "Old" or move it to $mbox
 unset mark_old
