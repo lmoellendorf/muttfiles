@@ -69,8 +69,8 @@ set mask="!^\\.[^.]"
 # always insert the mutt user agent string
 set user_agent
 
-# use system editor
-set editor=$EDITOR
+# make sure Vim knows that we compose an UTF-8 encoded e-mail
+set editor="vim -c 'set syntax=mail ft=mail enc=utf-8'"
 
 # use ISO-8859-1 and UTF-8 as fallback
 #set charset="iso-8859-1:utf-8"
@@ -111,9 +111,6 @@ unset tilde
 
 # save attachment for FCC
 set fcc_attach
-
-# edit in vim
-set editor="vim"
 
 # view inline if possible
 set implicit_autoview
