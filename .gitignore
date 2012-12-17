@@ -3,3 +3,5 @@ cache/bodies/*
 !*.gitignore
 identity
 certificates
+# vim
+*.swp
