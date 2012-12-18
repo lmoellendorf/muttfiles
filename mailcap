@@ -5,11 +5,9 @@ text/html; lynx -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousou
 #text/html; w3m -I %{charset} -T text/html; copiousoutput;
 
 # viewing Word docs
-application/msword; antiword '%s'; copiousoutput; description=Word Document;
-nametemplate=%s.doc
+application/msword; antiword '%s'; copiousoutput; description=Word Document; nametemplate=%s.doc
 # viewing PDF docs
-application/pdf; pdftotext '%s' -; copiousoutput; description=PDF Document;
-nametemplate=%s.pdf
+application/pdf; pdftotext '%s' -; copiousoutput; description=PDF Document; nametemplate=%s.pdf
 # viewing images
 image/gif; xv %s
 image/jpg; xv %s
