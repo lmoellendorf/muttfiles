@@ -6,8 +6,14 @@ set use_from="yes"
 # set the envelope
 set envelope_from=yes
 
-# ask questions before setting up the reply
-unset fast_reply
+# let me edit the message header when composing
+set edit_headers
+
+# go to the editor right away when composing
+set autoedit
+
+# don't ask questions before setting up the reply
+set fast_reply
 
 # don't put me on recipient for group reply
 unset metoo
