@@ -103,6 +103,11 @@ unignore from: subject to cc bcc mail-followup-to date x-mailer x-url
 unhdr_order *
 hdr_order date from subject to cc bcc
 
+# smooth scrolling - no implicit next-page/prev-page
+set menu_scroll=yes
+
+# show some index lines in the pager
+set pager_index_lines=6
 
 # set marker for pager newline
 set markers=no
