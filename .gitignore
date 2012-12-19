@@ -1,6 +1,7 @@
 cache/headers/*
 cache/bodies/*
 !*.gitignore
+muttrc
 identity*
 !identity_template
 signature*
