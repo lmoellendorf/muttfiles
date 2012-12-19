@@ -75,7 +75,7 @@ set date_format="!%a, %b %d, %Y at %I:%M:%S%p %Z"
 set folder_format="%N %F %2l %-8.8u %-8.8g %8s %d %f"
 
 # line format for the mail index
-set index_format="%4C %Z %{%b %d} %-15.15L (%4c) %s"
+set index_format="%4C %Z %{%a.%d/%m/%y-%R} %-15.15L (%4c) %s"
 
 # pages status line
 set pager_format="-%S- %C/%m: %-20.20n   %s"
@@ -91,6 +91,18 @@ set alias_format="%4n %t %-10a   %r"
 
 # format of compose and attachment menus
 #set attach_format="%u%D%I %t%4n %T%.40d%> [%.7m/%.10M, %.6e%?C?, %C?, %s] "
+
+# Header fields I don't normally want to see
+# this means "ignore all lines by default"
+ignore *
+# I do want to see these fields, though!
+unignore from: subject to cc bcc mail-followup-to date x-mailer x-url
+
+# Specify the order of the headers to appear when displaying a message
+# forget the previous settings
+unhdr_order *
+hdr_order date from subject to cc bcc
+
 
 # set marker for pager newline
 set markers=no
