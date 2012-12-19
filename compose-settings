@@ -43,7 +43,7 @@ set recall="ask-yes"
 set reverse_name
 
 # how to start a reply mail and where to quote
-set attribution="Hi!\n\nOn %d, %n wrote:"
+#set attribution="Hi!\n\nOn %d, %n wrote:"
 
 # how to start a forward mail
 set forward_format="[%a: %s]"
