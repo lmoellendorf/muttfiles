@@ -7,8 +7,8 @@ bind pager d delete-message
 # reply to message with r
 bind index r reply
 
-# fetch imap on G
-bind index G imap-fetch-mail
+# just like vi and less
+bind pager G bottom
 
 # vi keys for scrolling in pager
 bind pager k previous-line
