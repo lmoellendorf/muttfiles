@@ -1,0 +1,5 @@
+# Settings for newsgroups (Network News Transfer Protocol)
+# requires nntp extension for mutt
+
+# reset <F> to its default value
+macro index F "<flag-message>"

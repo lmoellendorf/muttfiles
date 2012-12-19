@@ -14,6 +14,7 @@ source $my_mutt_dir/regex-settings
 source $my_mutt_dir/imap-settings
 source $my_mutt_dir/smtp-settings
 source $my_mutt_dir/subscription-settings
+source $my_mutt_dir/nntp-settings
 
 # Switch to default account on startup.
 source $my_mutt_dir/identity_fernuni
