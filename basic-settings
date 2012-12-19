@@ -81,16 +81,16 @@ set index_format="%4C %Z %{%b %d} %-15.15L (%4c) %s"
 set pager_format="-%S- %C/%m: %-20.20n   %s"
 
 # message format
-set message_format="%s"
+#set message_format="%s"
 
 # format of status line
-set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---"
+#set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---"
 
 # format of alias menu data
 set alias_format="%4n %t %-10a   %r"
 
 # format of compose and attachment menus
-set attach_format="%u%D%I %t%4n %T%.40d%> [%.7m/%.10M, %.6e%?C?, %C?, %s] "
+#set attach_format="%u%D%I %t%4n %T%.40d%> [%.7m/%.10M, %.6e%?C?, %C?, %s] "
 
 # set marker for pager newline
 set markers=no
