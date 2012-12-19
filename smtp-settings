@@ -1,6 +1,2 @@
-#
 # SMTP settings
-#
-# set smtp_url=$my_smtp_url
-# set smtp_authenticators="login"
-set sendmail="/usr/local/bin/msmtp"
+#set sendmail="/usr/local/bin/msmtp"

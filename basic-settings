@@ -2,27 +2,9 @@
 # basic mutt settings
 #
 
-# reset everything to default
-reset all
-
-# set the homedir
-set my_mutt_dir=$HOME/.mutt
 # set the dir for caching
 # when using an SSD it is preferred to cache in RAM
 set my_cachedir=/var/tmp/mutt
-
-# import your identity
-source $my_mutt_dir/identity
-
-# include all other settings
-source $my_mutt_dir/color-settings
-source $my_mutt_dir/compose-settings
-source $my_mutt_dir/keybind-settings
-source $my_mutt_dir/mime-settings
-source $my_mutt_dir/regex-settings
-source $my_mutt_dir/imap-settings
-source $my_mutt_dir/smtp-settings
-source $my_mutt_dir/subscription-settings
 
 # where dat mailcap at?
 set mailcap_path=$my_mutt_dir/mailcap

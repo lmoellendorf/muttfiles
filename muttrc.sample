@@ -1,0 +1,28 @@
+# reset everything to default
+reset all
+
+# set the homedir
+set my_mutt_dir=$HOME/.mutt
+
+# include all other settings
+source $my_mutt_dir/basic-settings
+source $my_mutt_dir/color-settings
+source $my_mutt_dir/compose-settings
+source $my_mutt_dir/keybind-settings
+source $my_mutt_dir/mime-settings
+source $my_mutt_dir/regex-settings
+source $my_mutt_dir/imap-settings
+source $my_mutt_dir/smtp-settings
+source $my_mutt_dir/subscription-settings
+
+# Switch to default account on startup.
+source $my_mutt_dir/identity_fernuni
+
+# folder hooks to load custom configuration
+folder-hook 'fernuni-hagen.de' 'source $my_mutt_dir/identity_fernuni'
+folder-hook 'strato.de' 'source $my_mutt_dir/identity_stzedn'
+
+# bind the accounts to fn keys
+macro index <f2> '<change-folder>imaps://mailstore.fernuni-hagen.de<enter>'
+macro index <f3> '<change-folder>imaps://imap.strato.de<enter>'
+
