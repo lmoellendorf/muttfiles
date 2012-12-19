@@ -36,6 +36,9 @@ set include="yes"
 # ask to use address in reply-to header
 set reply_to="ask-yes"
 
+# prompt to recall postponed messages
+set recall="ask-yes"
+
 # use the address the mail has been sent to
 set reverse_name
 
