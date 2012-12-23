@@ -1,20 +1,20 @@
 # basic identity
-set realname=""
-set from=""
+set realname = ""
+set from = ""
 alternates ""
-set hostname=""
-set signature=""
+set hostname = ""
+set signature = ""
 
 # IMAP account settings
-set imap_user =
-set imap_pass =
-set folder =
-set spoolfile =
-mailboxes =
-set mbox=
-set record =
-set postponed =
+set imap_user = ""
+set imap_pass = ""
+set folder = ""
+set spoolfile = ""
+mailboxes = ""
+set mbox = ""
+set record = ""
+set postponed = ""
 
 # SMTP mailing configuration (for sending mail)
-set smtp_url =
+set smtp_url = ""
 
