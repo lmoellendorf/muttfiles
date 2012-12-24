@@ -1,27 +1,23 @@
 # mutt configuration
 
 ## Overview
-This is a cleanup of my mutt configuration which I have used for years. It is
-heavily based on the mutt config I got many moons ago courtesy
-[lordbyte](https://twitter.com/lordbyte).
+Customized mutt configuration based on mrtazz/muttfiles. Tested with imap
+and smtp.
+
+## Features
+* prepared for using folder-hooks to manage different accounts
+* mailcap added for inline viewing of attachemnents
+* highlight new and important mails
+* some simplifications for a smoother workflow (sure, this is a matter of
+  taste and application scenario)
 
 ## Setup
-Just clone this repository into your home and either symlink ~/.muttrc to the
-basic-settings file or have it source basic-settings. You also have to create
-a file called `identity` in your mutt folder with the following settings:
-
-
-    # basic identity
-    set realname="Your name here"
-    set from="your primary email address here"
-    alternates "alternative mail adresses|separated by pipes"
-    set hostname="domain of your primary mail address"
-
-    # imap login
-    set my_imap_url="imaps://login:password@imapserver:port/"
-
-    # smtp login
-    set my_smtp_url="smtp://login:password@smtpserver:port/"
-
+1. Clone this repository into your home directory. You may clone it into
+   ~/.mutt.
+2. Create your inditiy file(s) based on the identiy_sample file.
+3. Based on the muttrc.sample create your muttrc file. See the sample for
+   details.
+4. If you didn't clone to ~/.mutt, symlink your muttrc file to either
+   ~/.muttrc or ~/.mutt/muttrc.
 
 This should get you going with mutt.
