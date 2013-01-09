@@ -35,3 +35,8 @@ macro index Ls "<enter-command>unset wait_key<enter><shell-escape>read -p 'notmu
 # 'a' shows all messages again (supersedes default <alias> binding)
 macro index La "<limit>all\n" "show all messages (undo limit)"
 macro index,pager "<esc>o" "<enter-command>unset wait_key<enter><pipe-message>mutt-to-omnifocus.py <enter>" \ "Create OmniFocus task from message"
+
+# mark ALL messages in index as read
+macro index <Esc>m "T~N<enter>;WNT~O<enter>;WO\CT~A<enter>" "mark all messages read"
+# tag all duplicates - use ';d' to delete them
+macro index ~ 'T~=<enter>' "tag all duplicate messages - use \';d\' to delete them after tagging"
