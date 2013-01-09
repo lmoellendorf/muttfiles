@@ -21,10 +21,14 @@ source $my_mutt_dir/nntp-settings
 source $my_mutt_dir/identity_fernuni
 
 # folder hooks to load custom configuration
+# folder-hook [!]regexp command
+# if multiple folder-hooks match they are read in the given order
 folder-hook 'fernuni-hagen.de' 'source $my_mutt_dir/identity_fernuni'
 folder-hook 'strato.de' 'source $my_mutt_dir/identity_stzedn'
 
 # bind the accounts to fn keys
+# to find out keycodes within mutt type:
+# exec: what-key
 macro index <f2> '<change-folder>imaps://mailstore.fernuni-hagen.de<enter>'
 macro index <f3> '<change-folder>imaps://imap.strato.de<enter>'
 
