@@ -20,7 +20,7 @@ set net_inc=5
 # sort by date sent, thread
 set sort="date-sent"
 set sort="threads"
-set sort_aux="last-date-received"
+set sort_aux="last-date-sent"
 # thread sorting only by In-Reply-To header and Subject
 set strict_threads="yes"
 # collapse threads with unread messages
