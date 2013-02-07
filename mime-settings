@@ -4,5 +4,5 @@
 set forward_decode="no"
 
 # use MIME when forwarding
-set mime_forward="ask-yes""
-set mime_forward_rest="ask-yes""
+set mime_forward="ask-yes"
+set mime_forward_rest="ask-yes"
