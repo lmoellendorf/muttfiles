@@ -5,6 +5,7 @@ bind index r reply
 
 # just like vi and less
 bind pager G bottom
+bind index G last-entry
 
 # vi keys for scrolling in pager
 bind pager k previous-line
