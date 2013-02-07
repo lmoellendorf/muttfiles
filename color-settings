@@ -46,7 +46,7 @@ color search yellow default
 
 # tagged messages
 color index magenta default ~T
-color index default green ~F
+color index brightyellow green ~F
 color index brightdefault green ~N
 
 # deleted messages
