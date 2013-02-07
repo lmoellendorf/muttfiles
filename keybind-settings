@@ -13,6 +13,8 @@ bind pager j next-line
 bind index k previous-entry
 bind index j next-entry
 
+# go to next mailbox with unread mails
+bind index µ next-unread-mailbox
 
 # thread collapsing
 bind index - collapse-thread
