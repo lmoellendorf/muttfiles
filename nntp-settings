@@ -2,4 +2,9 @@
 # requires nntp extension for mutt
 
 # reset <F> to its default value
-macro index F "<flag-message>"
+bind index F flag-message
+bind pager F flag-message
+# reset <P> to its default value
+bind index P parent-message
+bind pager P parent-message
+
