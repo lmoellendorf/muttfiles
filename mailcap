@@ -9,5 +9,5 @@ application/msword; antiword '%s'; copiousoutput; description=Word Document; nam
 # viewing PDF docs
 application/pdf; pdftotext '%s' -; copiousoutput; description=PDF Document; nametemplate=%s.pdf
 # viewing images
-image/gif; xv %s
-image/jpg; xv %s
+image/gif; xv '%s'
+image/jpg; xv '%s'
