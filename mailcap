@@ -6,8 +6,13 @@ text/html; lynx -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousou
 
 # viewing Word docs
 application/msword; antiword '%s'; copiousoutput; description=Word Document; nametemplate=%s.doc
+# viewing OpenDocument Text
+application/vnd.oasis.opendocument.text; odt2txt %s; copiousoutput; description=OpenDocument Text; nametemplate=%s.odt
 # viewing PDF docs
 application/pdf; pdftotext '%s' -; copiousoutput; description=PDF Document; nametemplate=%s.pdf
 # viewing images
 image/gif; xv '%s'
 image/jpg; xv '%s'
+image/jpeg; xv '%s'
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; libreoffice '%s'
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice '%s'
