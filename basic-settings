@@ -81,12 +81,6 @@ set index_format="%4C %Z %{%a.%d.%m.%y-%R} %-15.15L (%4c) %s"
 # pages status line
 set pager_format="-%S- %C/%m: %-20.20n   %s"
 
-# message format
-#set message_format="%s"
-
-# format of status line
-#set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---"
-
 # format of alias menu data
 set alias_format="%4n %t %-10a   %r"
 # sort by alias
