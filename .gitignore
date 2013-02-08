@@ -8,3 +8,4 @@ signature*
 certificates
 # vim
 *.swp
+alias_*
