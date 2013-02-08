@@ -15,11 +15,20 @@ color signature red default
 # message cursor
 color indicator brightwhite magenta
 
+# errors
+color error brightred default
+
 # status line
 color status cyan default
 
 # thread arrows
 color tree red default
+
+# the tilde
+color tilde magenta default
+
+# the messages
+color message brightcyan default
 
 # the plus sign newline marker
 color markers red default
@@ -30,6 +39,13 @@ color attachment brightmagenta default
 # search result in pager
 color search yellow default
 
+color header brightred default ^(From|Subject):
+# point out URLs
+color body magenta default "(ftp|http|https)://[^ ]+"
+# e-mail addresses
+color body magenta default [-a-z_0-9.]+@[-a-z_0-9.]+
+color underline brightgreen default
+
 # tagged messages
 color index magenta default ~T
 color index brightyellow green ~F
@@ -38,3 +54,6 @@ color index brightdefault green ~N
 # deleted messages
 color index black yellow ~D
 
+# attributes when using a mono terminal
+mono header underline ^(From|Subject):
+mono quoted bold
