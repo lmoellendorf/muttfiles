@@ -9,7 +9,6 @@ source $my_mutt_dir/basic-settings
 source $my_mutt_dir/color-settings
 source $my_mutt_dir/compose-settings
 source $my_mutt_dir/keybind-settings
-source $my_mutt_dir/mime-settings
 source $my_mutt_dir/regex-settings
 source $my_mutt_dir/imap-settings
 source $my_mutt_dir/maildir-settings
