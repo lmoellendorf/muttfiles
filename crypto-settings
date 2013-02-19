@@ -39,8 +39,8 @@ set crypt_autosign
 # sign only replies to signed messages
 set crypt_replysign
 
-# automatically encrypt outgoing messages
-set crypt_autoencrypt=yes
+# do not automatically encrypt outgoing messages
+set crypt_autoencrypt=no
 # encrypt only replies to signed messages
 set crypt_replyencrypt=yes
 # encrypt and sign replies to encrypted messages
