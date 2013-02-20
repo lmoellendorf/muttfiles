@@ -1,0 +1,11 @@
+# local maildir
+set folder = "~/Maildir/no-spam.at.phaenovum.de/"
+set spoolfile = "+INBOX"
+# enable this to remove the mailboxes of the other accounts (s. README.md)
+#unmailboxes = *
+mailboxes = "+INBOX" "+drafts" "+sent" "+templates" "+trash"
+set mbox = "+INBOX"
+set record = "+sent"
+set postponed = "+drafts"
+
+source $my_mutt_dir/identity_phaenovum

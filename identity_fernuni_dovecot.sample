@@ -1,0 +1,11 @@
+# IMAP account on local dovecot server
+set folder = "imaps://no-spam.at.fernuni-hagen.de@localhost/"
+set spoolfile = "+INBOX"
+# enable this to remove the mailboxes of the other accounts (s. README.md)
+#unmailboxes = *
+mailboxes = "+INBOX" "+sent" "+drafts" "+templates"
+set mbox = "+INBOX"
+set record = "+sent"
+set postponed = "+drafts"
+
+source $my_mutt_dir/identity_fernuni

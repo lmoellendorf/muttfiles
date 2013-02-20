@@ -6,6 +6,7 @@ identity*
 !identity_template
 signature*
 certificates
+!*.sample
 # vim
 *.swp
 alias_*

@@ -1,0 +1,31 @@
+# basic identity
+set realname = "Lars Möllendorf"
+set from = "no-spam.at.fernuni-hagen.de"
+alternates ""
+set hostname = ""
+set signature = ""
+set alias_file = "$my_mutt_dir/alias_fernuni"
+source $alias_file
+
+# PGP settings
+# specify the uid to use when encrypting/signing
+set pgp_sign_as=
+# NOTE: The pgp_encrypt_only_command and pgp_encrypt_sign_command here override
+# the corresponding settings in the crypto-settings file. Here they contain an
+# instruction to also encrypt the message using the author's public key.
+# That is the option, "--encrypt-to 0xDEADBEEF". If you want to automatically
+# encrypt messsages to yourself (for the Sent folder, for example), replace
+# 0xDEADBEEF with your public key's id. Otherwise, remove the entire
+# "--encrypt-to 0xDEADBEEF".
+#set pgp_encrypt_only_command="pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust --encrypt-to 0xDEADBEEF -- -r %r -- %f"
+set pgp_encrypt_only_command="pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust -- -r %r -- %f"
+#set pgp_encrypt_sign_command="pgpewrap gpg --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust --encrypt-to 0xDEADBEEF -- -r %r -- %f"
+set pgp_encrypt_sign_command="pgpewrap gpg --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust -- -r %r -- %f"
+# inform your recipient of the web address of your public key
+unmy_hdr X-PGP-Key
+#my_hdr X-PGP-Key:
+
+# SMTP mailing configuration (for sending mail)
+set smtp_pass = "secret"
+set smtp_url = "smtps://no-spam:$smtp_pass@Mailstore.FernUni-Hagen.de/"
+

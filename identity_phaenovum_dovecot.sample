@@ -1,0 +1,11 @@
+# IMAP account on local dovecot server
+set folder = "imaps://no-spam.at.phaenovum.de@localhost/"
+set spoolfile = "+INBOX"
+# enable this to remove the mailboxes of the other accounts (s. README.md)
+#unmailboxes = *
+mailboxes = "+INBOX" "+drafts" "+sent" "+templates" "+trash"
+set mbox = "+INBOX"
+set record = "+sent"
+set postponed = "+drafts"
+
+source $my_mutt_dir/identity_phaenovum

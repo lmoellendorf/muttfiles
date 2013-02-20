@@ -18,17 +18,31 @@ source $my_mutt_dir/nntp-settings
 source $my_mutt_dir/crypto-settings
 
 # Switch to default account on startup.
-source $my_mutt_dir/identity_fernuni
+source $my_mutt_dir/identity_fernuni_dovecot
 
 # folder hooks to load custom configuration
 # folder-hook [!]regexp command
 # if multiple folder-hooks match they are read in the given order
-folder-hook 'fernuni-hagen.de' 'source $my_mutt_dir/identity_fernuni'
-folder-hook 'strato.de' 'source $my_mutt_dir/identity_stzedn'
 
-# bind the accounts to fn keys
-# to find out keycodes within mutt type:
-# exec: what-key
-macro index <f2> '<change-folder>imaps://mailstore.fernuni-hagen.de<enter>'
-macro index <f3> '<change-folder>imaps://imap.strato.de<enter>'
+## phaenovum.de
+# <F6> for dovecot
+macro index,pager <f6> <change-folder>imaps://no-spam.at.phaenovum.de@localhost<enter>
+folder-hook no-spam.at.phaenovum.de@localhost 'source $my_mutt_dir/identity_phaenovum_dovecot'
+# <Shift>+<F6> for remote server
+macro index,pager <f18> '<change-folder>imaps://imap.phaenovum.de<enter>'
+folder-hook imap.phaenovum.de 'source $my_mutt_dir/identity_phaenovum_remote'
+# <Esc>+<F6> for local Maildir
+macro index,pager \e<f6> <change-folder>~/Maildir/no-spam.at.phaenovum.de<enter>
+folder-hook ~/Maildir/no-spam.at.phaenovum.de 'source $my_mutt_dir/identity_phaenovum_maildir'
+
+## fernuni-hagen.de
+# <F7> for dovecot
+macro index,pager <f7> <change-folder>imaps://no-spam.at.fernuni-hagen.de@localhost<enter>
+folder-hook no-spam.at.fernuni-hagen.de@localhost 'source $my_mutt_dir/identity_fernuni_dovecot'
+# <Shift>+<F7> for remote server
+macro index,pager <f19> '<change-folder>imaps://mailstore.fernuni-hagen.de<enter>'
+folder-hook mailstore.fernuni-hagen.de 'source $my_mutt_dir/identity_fernuni_remote'
+# <Esc>+<F7> for local Maildir
+macro index,pager \e<f7> <change-folder>~/Maildir/no-spam.at.fernuni-hagen.de<enter>
+folder-hook ~/Maildir/no-spam.at.fernuni-hagen.de 'source $my_mutt_dir/identity_fernuni_maildir'
 

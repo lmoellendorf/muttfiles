@@ -1,0 +1,13 @@
+# IMAP account on remote server
+set imap_user = "no-spam"
+set imap_pass = "secret"
+set folder = "imaps://$imap_user@mailstore.fernuni-hagen.de/"
+set spoolfile = "+INBOX"
+# enable this to remove the mailboxes of the other accounts (s. README.md)
+#unmailboxes = *
+mailboxes = "+INBOX" "+sent" "+drafts" "+templates"
+set mbox = "+INBOX"
+set record = "+sent"
+set postponed = "+drafts"
+
+source $my_mutt_dir/identity_fernuni
