@@ -43,6 +43,9 @@ set move="no"
 # display help in top line
 set help
 
+# prompt for confirmation before quitting
+set quit="ask-yes"
+
 # certificates
 set certificate_file =$my_mutt_dir/certificates
 
