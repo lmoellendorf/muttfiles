@@ -14,5 +14,7 @@ application/pdf; pdftotext '%s' -; copiousoutput; description=PDF Document; name
 image/gif; xv '%s'
 image/jpg; xv '%s'
 image/jpeg; xv '%s'
-application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; libreoffice '%s'
-application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice '%s'
+# libreoffice
+application/vnd.oasis.opendocument.text; libreoffice %s; description=OpenDocument Text; nametemplate=%s.odt
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; libreoffice '%s'; description=OpenDocument Text; nametemplate=%s.ods
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice '%s'; description=OpenDocument Text
