@@ -1,6 +1,6 @@
 # viewing HTML
 # for lynx
-text/html; lynx -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousoutput
+text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput
 # for w3m
 #text/html; w3m -I %{charset} -T text/html; copiousoutput;
 
