@@ -12,7 +12,6 @@ source $my_mutt_dir/keybind-settings
 source $my_mutt_dir/regex-settings
 source $my_mutt_dir/imap-settings
 source $my_mutt_dir/maildir-settings
-source $my_mutt_dir/smtp-settings
 source $my_mutt_dir/subscription-settings
 source $my_mutt_dir/nntp-settings
 source $my_mutt_dir/crypto-settings
