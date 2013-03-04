@@ -105,6 +105,9 @@ unignore from: subject to cc bcc mail-followup-to date x-mailer x-url
 unhdr_order *
 hdr_order date from subject to cc bcc
 
+# decode the messages before piping (not doing so would break urlview)
+set pipe_decode=yes
+
 # ask to use MIME when forwarding
 set mime_forward="ask-yes"
 
