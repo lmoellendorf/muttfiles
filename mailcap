@@ -1,8 +1,8 @@
 # viewing HTML
 # for lynx
-text/html; lynx -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousoutput
+text/html; lynx -assume_charset=%{charset} -dump %s; nametemplate=%s.html; copiousoutput
 # for w3m
-#text/html; w3m -I %{charset} -T text/html; copiousoutput;
+#text/html; w3m -I %{charset} -dump -T text/html; copiousoutput;
 
 # viewing Word docs
 application/msword; antiword %s; copiousoutput; description=Word Document; nametemplate=%s.doc
