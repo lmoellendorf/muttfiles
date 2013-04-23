@@ -5,7 +5,7 @@ set folder = "imaps://$imap_user@mailstore.fernuni-hagen.de/"
 set spoolfile = "+INBOX"
 # enable this to remove the mailboxes of the other accounts (s. README.md)
 #unmailboxes = *
-mailboxes = "+INBOX" "+sent" "+drafts" "+templates"
+mailboxes = "+INBOX"
 set mbox = "+INBOX"
 set record = "+sent"
 set postponed = "+drafts"

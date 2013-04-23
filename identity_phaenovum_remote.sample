@@ -5,7 +5,7 @@ set folder = "imaps://$imap_user@imap.phaenovum.de/"
 set spoolfile = "+INBOX"
 # enable this to remove the mailboxes of the other accounts (s. README.md)
 #unmailboxes = *
-mailboxes = "+INBOX" "+Drafts" "+Junk" "+Sent" "+Trash"
+mailboxes = "+INBOX" "+Junk" "+Trash"
 set mbox = "+INBOX"
 set record = "+Sent"
 set postponed = "+Drafts"
