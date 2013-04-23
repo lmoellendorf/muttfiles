@@ -29,5 +29,4 @@ macro index ~ 'T~=<enter>' "tag all duplicate messages - use \';d\' to delete th
 # create ~/.urlview containing these 2 lines:
 # REGEXP (((http|https|ftp|gopher)|mailto)[.:][^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
 # COMMAND <your-favorite-browser> %s
-macro index \cb |urlview\n 'Follow links with urlview'
-macro pager \cb |urlview\n 'Follow links with urlview'
+macro index,pager \cb "<enter-command>unset wait_key<enter> |urlview\n <enter-command>set wait_key<enter>" 'Follow links with urlview'
