@@ -149,3 +149,7 @@ set confirmappend=no
 
 # don't ask for delete
 set delete=yes
+
+# sometimes I need to print an email
+set print_command="muttprint"
+
