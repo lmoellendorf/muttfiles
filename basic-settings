@@ -108,6 +108,10 @@ hdr_order date from subject to cc bcc
 # decode the messages before piping (not doing so would break urlview)
 set pipe_decode=yes
 
+# set this variable when mutt suggests you to save attachments to files named
+# like: =?iso-8859-1?Q?file=5F=E4=5F991116=2Ezip?=
+set rfc2047_parameters=yes
+
 # ask to use MIME when forwarding
 set mime_forward="ask-yes"
 
