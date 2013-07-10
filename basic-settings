@@ -5,7 +5,7 @@
 # set the dir for caching
 # when using an SSD it is preferred to cache in RAM
 # TODO: make sure this is a directory for performance!
-set my_cachedir=/var/tmp/mutt
+set my_cachedir=/tmp/mutt
 
 # where dat mailcap at?
 set mailcap_path=$my_mutt_dir/mailcap
