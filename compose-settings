@@ -12,7 +12,7 @@ set edit_headers
 # don't put me on recipient for group reply
 unset metoo
 
-# don't check spelling
+# set spell checker
 set ispell="aspell -e -c"
 
 # don't ignore reply-to header on mailing lists
@@ -35,9 +35,6 @@ set recall="ask-yes"
 
 # use the address the mail has been sent to
 set reverse_name
-
-# how to start a reply mail and where to quote
-#set attribution="Hi!\n\nOn %d, %n wrote:"
 
 # how to start a forward mail
 set forward_format="Fwd: %s"
