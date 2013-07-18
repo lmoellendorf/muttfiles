@@ -33,9 +33,6 @@ set reply_to="ask-yes"
 # prompt to recall postponed messages
 set recall="ask-yes"
 
-# use the address the mail has been sent to
-set reverse_name
-
 # how to start a forward mail
 set forward_format="Fwd: %s"
 
