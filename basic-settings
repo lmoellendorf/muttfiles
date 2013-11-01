@@ -56,7 +56,8 @@ set mask="!^\\.[^.]"
 set user_agent
 
 # make sure Vim knows that we compose an UTF-8 encoded e-mail
-set editor="vim -c 'set syntax=mail ft=mail enc=utf-8'"
+# (s. RFC5322 for the 78 character soft-limit)
+set editor="vim -c 'set syntax=mail ft=mail enc=utf-8' -c 'set colorcolumn=78'"
 
 # if there is no character set given on incoming messages,
 # it is probably windows
