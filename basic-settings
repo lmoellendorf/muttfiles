@@ -70,6 +70,18 @@ set charset="utf-8"
 # automatically choose utf-8, if the mail contains non-ascii characters
 set send_charset="us-ascii:utf-8"
 
+# using msmtp
+#set sendmail="/usr/bin/msmtp --debug --file=/home/lars/.msmtp/msmtprc"
+set sendmail="/home/lars/.msmtp/msmtpq --file=/home/lars/.msmtp/msmtprc"
+# don't wait for msmtp to finish
+set sendmail_wait=-1
+# use the from
+set use_from="yes"
+# set the envelope
+# lets  Mutt use the -f option of msmtp. Therefore msmtp chooses the first
+# account that matches the from address
+set envelope_from="yes"
+
 # make sure not to use quoted printables
 unset allow_8bit
 

@@ -1,11 +1,5 @@
 # basic settings for composing mail
 
-# use the from
-set use_from="yes"
-
-# set the envelope
-set envelope_from=yes
-
 # let me edit the message header when composing
 set edit_headers
 
